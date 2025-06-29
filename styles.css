@@ -1,0 +1,162 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: lightskyblue;
+}
+
+.container {
+  z-index: 3;
+  animation: breathingShadow 4s ease-in-out infinite;
+}
+
+@keyframes breathingShadow {
+  0% {
+    box-shadow:
+      5px 0px 55px 8px rgba(41, 47, 228, 0.2),
+     -5px 0px 55px 8px rgba(41, 47, 228, 0.2),
+      0px 5px 55px 8px rgba(41, 47, 228, 0.2);
+  }
+  25% {
+    box-shadow:
+      5px 0px 55px 8px rgba(135, 88, 211, 0.6),
+     -5px 0px 55px 8px rgba(135, 88, 211, 0.6),
+      0px 5px 55px 8px rgba(135, 88, 211, 0.6);
+  }
+  50% {
+    box-shadow:
+      5px 0px 55px 8px rgba(0, 255, 255, 0.6),
+     -5px 0px 55px 8px rgba(0, 255, 255, 0.6),
+      0px 5px 55px 8px rgba(0, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow:
+      5px 0px 55px 8px rgba(41, 47, 228, 0.2),
+     -5px 0px 55px 8px rgba(41, 47, 228, 0.2),
+      0px 5px 55px 8px rgba(41, 47, 228, 0.2);
+  }
+}
+
+#mainCenter {
+  position: absolute;
+  width: 400px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.containerElements {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+input:hover {
+  border: 2px solid rgb(29, 212, 248);
+  box-shadow: 0px 5px 8px rgb(29, 212, 248),
+              0px -5px 8px rgb(29, 212, 248);
+  transition: 0.5s ease;
+}
+
+label {
+  display: block;
+  margin: 5px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#linkToUp, #linkToIn {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+
+span {
+  color: red;
+}
+
+#signUp, #signIn {
+  margin-right: 50px;
+}
+
+#resetBtn {
+  margin-left: 40px;
+}
+
+#wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(to right ,orange,yellow);
+}
+
+#final {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-shadow:
+    0px -10px 15px blue,
+    0px 10px 15px blue;
+}
+
+#ribbonIcon {
+  position: absolute;
+  color: crimson;
+  font-size: 520px;
+  top: -70px;
+  left: 20px;
+  z-index: 10;
+}
+
+#ribbonImg {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 500px;
+  z-index: 15;
+  transform: rotate(-2deg);
+}
+@media (max-width: 480px) {
+  #mainCenter {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #final {
+    font-size: 8vw;
+  }
+
+  #ribbonIcon {
+    font-size: 60vw;
+    top: -10vw;
+    left: 5vw;
+  }
+
+  #ribbonImg {
+    width: 80vw;
+    top: -10vw;
+    left: -10vw;
+  }
+
+  #signUp, #signIn, #resetBtn {
+    margin: 10px auto;
+    display: block;
+  }
+}
+h1 {
+    text-shadow:0 4px 8px rgb(190, 189, 170),
+                0 -4px 8px rgb(190, 189, 170);
+
+}
+#finalContainer {
+    background-color: yellow;
+}
